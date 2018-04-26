@@ -20,11 +20,11 @@ class Triangle
   end
 
   def legit?
-    if !((a + b > c)&&(a + c > b)&&(b + c > a)&&a>=0&&b>=0&&c>=0)
+    if !((a + b > c)&&(a + c > b)&&(b + c > a)&&(a>=0)&&(b>=0)&&(c>=0))
       raise TriangleError
     end
   end
-  
+
   class TriangleError < StandardError
   end
 
